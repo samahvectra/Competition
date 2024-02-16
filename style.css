@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: burlywood;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #4f4f4f;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+nav {
+  background-color: #3d281c;
+  padding: 10px 20px;
+  text-align: center;
+}
+* {
+  font-family: "Lobster", cursive;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./clem-onojeghuo-oYeW2E93HlY-unsplash.jpg);
+  z-index: -1;
+}
+.menu {
+  background-color: #333333;
+  width: 100%;
+}
+
+.menu .menu-header,
+.shop .shop-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-header h3,
+.shop h3 {
+  color: orange;
+  padding: 10px 30px;
+}
+
+.menu-header h4,
+.shop h4 {
+  color: orange;
+  padding: 10px 20px;
+}
+
+.menu .menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  background-color: #404040;
+}
+.menu-content h4 {
+  color: orange;
+}
+
+.menu .menu-content .hot-coffees,
+.cold-coffees {
+  width: 250px;
+}
+
+.menu .menu-content .hot-coffees .hot-coffees-image,
+img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.menu .menu-content .cold-coffees .cold-coffees-image img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.menu .menu-content img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .hot-coffees-body,
+.cold-coffees-body {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu .menu-content .hot-coffees-body h2,
+.cold-coffees-body h2 {
+  color: orange;
+}
+
+.menu .menu-content .hot-coffees-body label,
+.cold-coffees-body label {
+  margin-top: 10px;
+  color: white;
+}
+
+.shop-header {
+  background-color: #333333;
+}
+.shop-products {
+  background-color: #404040;
+}
+
+.shop-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #404040;
+  padding: 20px;
+}
+
+.shop-products h3 {
+  color: orange;
+}
+
+.menu-item {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.menu-item-image {
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.menu-item-details h4 {
+  color: orange;
+  margin-bottom: 8px;
+}
+
+.menu-item-details p {
+  color: white;
+  margin-bottom: 0;
+}
+.footer {
+  background-color: #404040;
+  border-top: 2px solid #333333;
+}
+
+.footer .footer-box {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .footer-box .social-media a {
+  color: white;
+  background-color: #333333;
+  border-radius: 50%;
+  font-size: 17px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+  opacity: 0.7;
+}
+
+.footer .footer-box .copyright {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .footer-box .brand {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .footer-box .brand span {
+  color: orange;
+}
